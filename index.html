@@ -1,0 +1,186 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="index.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar" role="navigation" aria-label="nav-menu">
+        <div class="nav-content">
+          <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li>
+              <a href="images/akshayresume2023.pdf" download="">Resume</a>
+            </li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#bio">Bio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="nav-heading"><h1>Akshay Gupta</h1></div>
+      </div>
+    </header>
+    <main role="main">
+      <div class="container" id="home">
+        <div class="home-heading">
+          <div>Hi, My Name is Akshay Gupta</div>
+        </div>
+      </div>
+      <div class="container" id="projects">
+        <div class="card" onClick="showclick()" tabindex="0">
+          <img
+            src="./images/React_logo.png"
+            alt="Logo For ReactJS Project"
+            style="width: 100%"
+          />
+          <div class="card-container">FullStack Instagram Clone</div>
+        </div>
+        <div class="card" onClick="show2ndclick()" tabindex="0">
+          <img
+            src="./images/java.png"
+            alt="Logo for Java Spring Boot project"
+            style="width: 100%"
+          />
+          <div class="card-container">Java Spring Boot App</div>
+        </div>
+      </div>
+      <div class="container" id="bio">
+        <div class="card">
+          <div class="card-container">
+            <div class="bio-heading"><b>Bio: Akshay Gupta</b></div>
+            <br />
+            <p>
+              I'm Akshay Gupta. I'm working with newest front-end frameworks
+              like Angular, React and Java Spring Boot. I have been working at
+              Zendesk as a SDE Intern for the past year.
+            </p>
+            <p>
+              Currently, A Masters CS grad at Northwestern University. I'm well
+              versed with ReactJS, Unity Engine and Java Spring Development. You
+              can find me on Linkedin and on Github.
+            </p>
+            <ul>
+              <li>Birthday: 8 October 1998</li>
+              <li>Phone: +1630 362 7359</li>
+              <li>City: City : Chicago, USA</li>
+              <li>Email: akshayusa20@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-container">
+            <div class="bio-heading"><b>Technologies</b></div>
+            <br />
+            <ul>
+              <li>
+                Programming Languages: Javascript, ReactJS, Typescript, Angular,
+                Bootstrap, Java, C#, Spring, Spring boot,
+              </li>
+              <li>Database: MySQL,MongoDB</li>
+              <li>
+                Tools: Eclipse IDE, IntelliJ, Git, Docker, JUnit, Unity IDE,
+                Vuforia, ARFoundation.
+              </li>
+              <li>
+                Methodologies: Oriented Design(OOO), Agile Software Development,
+                Object-Oriented Programming, Scrum, Test Driven Development.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer" id="contact" role="contact-info">
+      <div>Akshay Gupta</div>
+      <a href="https://www.linkedin.com/in/akshay-gupta-illinois/">Linkedin</a>
+      <a href="https://github.com/akshay-vgupta">Github</a>
+      <a href="https://www.instagram.com">Instagram</a>
+    </footer>
+    <div
+      id="myModal"
+      class="modal"
+      role="dialog"
+      aria-label="Project 1 Info"
+      aria-describedby="project1-content"
+      aria-modal="true"
+    >
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" onClick="closeclick()" tabindex="0">&times;</span>
+        <div class="modal-card">
+          <div class="modal-card-container" id="project1-content">
+            <div>
+              Instagram Clone 🔗<a
+                href="https://github.com/akshay-vgupta/instagramclone"
+                >Github</a
+              >
+            </div>
+
+            <div>
+              <ul>
+                <li>
+                  Developed a full-stack web clone of instagram using ReactJS
+                  and flask. The app used React-Router for page navigation and
+                  Axios to fetch APIs.
+                </li>
+                <li>
+                  The APIs were built in Flask and leveraged JWT & CSRF refresh
+                  tokens to keep track of user sessions and provide
+                  authentication in application.
+                </li>
+                <li>
+                  Postgres was used to save user & post data and application was
+                  deployed using Heroku.
+                </li>
+                <li>
+                  Technologies: Javascript, React, Jest, Git, Python, Flask,
+                  Heroku, REST Architecture
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="myModal1"
+      class="modal"
+      role="dialog"
+      aria-label="Project 2 Info"
+      aria-describedby="project2-content"
+      aria-modal="true"
+    >
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" onClick="closeclick()" tabindex="0">&times;</span>
+        <div class="modal-card">
+          <div class="modal-card-container" id="project2-content">
+            <div>Stock Price Dashboard Microservices</div>
+            <div>
+              <ul>
+                <li>
+                  Developed & Integrated three micro-services on Spring boot
+                  stores stock data in a MongoDB docker container and retrieves
+                  price for stock via Polygon API
+                </li>
+                <li>
+                  The microservices communicate with each other through eureka
+                  server reducing delay by 50% and increases fetch time
+                  drastically
+                </li>
+                <li>
+                  Technologies: Java, Spring Boot, Microservice Architecture,
+                  Spring Cloud
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
